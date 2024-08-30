@@ -47,6 +47,7 @@ class ExecutorPluginDefaults(BaseModel):
     address: Optional[str] = ""
     ssh_key_file: Optional[str] = ""
     cert_file: Optional[str] = None
+    ssh_port: Optional[int] = 22
     remote_workdir: Optional[str] = "covalent-workdir"
     create_unique_workdir: bool = False
     variables: Optional[Dict[str, str]] = Field(default_factory=dict)
